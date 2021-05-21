@@ -48,28 +48,3 @@ def entranapagina():#loga no site do tcu e baixa arquivos
 
 entranapagina()
 print('extração finalizada')
-
-
-'''
-    x= input('ok')
-#entra nos processos:
-    i=1
-    for ele in elementos:
-        ele.click()
-        guiadepois = browser.window_handles[i] #vai para a nova janela criada
-        browser.switch_to.window(guiadepois)
-
-        # uso o beautifulsoup e o regex para achar o elemento procurado:
-        site = browser.page_source
-        sitesoup = bs4.BeautifulSoup(site)
-
-        decisoes_judiciais = sitesoup.find_all("a", string=re.compile('Decisão'))
-        sentenças_judiciais = sitesoup.find_all("a", string=re.compile('Sentença'))
-
-        print('decisões judiciais:')
-        print(decisoes_judiciais)
-        print('sentenças judiciais:')
-        print(sentenças_judiciais)
-        x = input('ok')
-        i=i+1
-'''
